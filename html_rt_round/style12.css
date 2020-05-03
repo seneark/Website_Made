@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(84, 216, 106);
+    padding:0;
+    margin:0;
+}
+.name{
+    position: fixed;
+    top: 10px;
+    color: rgb(151, 229, 164);
+    z-index: 1;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    text-shadow: lavenderblush;
+    
+}
+.nav{
+    overflow: hidden;
+    position: fixed;
+    top : 10x;
+    width:100%;
+    background-color: rgb(51, 50, 50);
+    padding: 10px;
+}
+.nav a{
+    font-size: 17px;
+    text-transform: initial;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    display: block;
+    text-decoration: none;
+    padding-left:10px ;
+    padding-right: 40px;
+    color: rgb(230, 220, 134);
+    transition-duration:0.8s;
+}
+.nav a:hover{
+    color: rgb(91, 204, 125);
+    transform: scaleX(1.05);
+}
+.ans p{
+    transform: scale(-1,-1);
+    font-family: 'Courier New', Courier, monospace;
+}
+.ans{
+    width: 100px;
+    height: 400px;
+    font-size:0;
+    background: rgb(225, 233, 116);
+    transition: width 2s, height 2s, transform 2s , font 2s;
+}
+.ans:hover{
+    width: 300px;
+    height: 400px;
+    transform: rotate(180deg);
+    font-size:50px;
+}

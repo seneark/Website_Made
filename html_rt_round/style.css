@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+.name{
+    position: fixed;
+    top: 10px;
+    color: rgb(151, 229, 164);
+    z-index: 1;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    text-shadow: lavenderblush;
+    
+}
+.nav{
+    overflow: hidden;
+    position: fixed;
+    top : 10x;
+    width:100%;
+    background-color: rgb(51, 50, 50);
+    padding: 10px;
+}
+.nav a{
+    font-size: 17px;
+    text-transform: initial;
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    display: block;
+    text-decoration: none;
+    padding-left:10px ;
+    padding-right: 40px;
+    color: rgb(230, 220, 134);
+    transition-duration:0.5s;
+}
+.nav a:hover{
+    color: rgb(12, 195, 219);
+    transform: scaleX(1.1);
+}
+.intro{
+    background-color: rgb(199, 231, 223);
+    padding: 50px;
+    text-align: center;    
+}
+.intro h1{
+    font-size: 50px;
+    font-family: 'Yeon Sung', cursive;
+    animation: example 4s infinite linear forwards;
+}
+@keyframes example{
+    0% {color:black;}
+    25%{color:rgb(67, 226, 160);}
+    50% {color:rgb(167, 161, 82);}
+    75%{color:rgb(67, 226, 160);}
+    100% {color: black;}
+}
+.intro h2{
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+.hrline{
+    border-top:3px solid rgb(221, 214, 109);
+}
+.sideLogin{
+    background-color: rgb(199, 231, 223);    
+    text-align: center;
+    height: 100vh;
+    font-family: 'Righteous', cursive;
+}
+input[type=submit]{
+    padding:10px 20px;
+    background-color: black;
+    border-radius: 25px;
+    text-decoration: none;
+    color:rgb(236, 133, 219);
+    transition-duration: 0.8s;
+}
+input[type=submit]:hover{
+    background-color:rgb(236, 133, 219);
+    color:black;
+}
+.footer{
+    position: fixed;
+    bottom:0;
+    background-color: rgb(191, 230, 100);
+    width: 100%;
+    padding:5px;
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ll{
+    float:left;
+}
+.right{
+    float:right;
+    padding-right: 10px;
+}
+
+
+
