@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+header nav{
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    background-color: rgba(243, 243, 243, 0.3);
+    transition: background-color 0.5s ease-in-out;
+    z-index: 99;
+    height: 60px;
+    /* overflow: hidden; */
+}
+header nav:hover{
+    background-color:  rgba(243, 243, 243, 0.9);
+    
+}
+.menu .logo_icon {
+    height: 55px;
+    float: left;
+    padding-left: 10px;
+}
+.menu .logo_icon img{
+    height: 100%;
+}
+
+header nav ul{
+    float: right;
+    margin: 0;
+    padding-right: 42px;
+}
+header nav ul li{
+    display: inline;
+    padding: 16px 20px;
+    text-align: center;
+}
+
+.NavbarMenu li a{
+    text-decoration: none !important;
+    color: #464159;
+    font-size: 16px ;
+    transition: all 0.2s;
+    position: relative;
+    padding: 10px;
+}
+.NavbarMenu li a::before{
+    content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #6098FF;
+  display: block;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+}
+.NavbarMenu li a:hover::before{
+    color: black;
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+.NavbarMenu li a:hover #DrpDwn {
+    display: block;
+}
+.NavbarMenu li a::after{
+    right: -5px;
+}
+
+#DrpDwn a{
+    margin: 0;
+    padding-top:0;
+    padding-left: 20px;
+    font-size: 16px;
+    color: black;
+}
+section{
+    padding-top: 90px;
+}
+
+
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: #3d84a8;
+    color: #fff;
+    transition: all 0.3s;
+    overflow-y: scroll;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#dismiss {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #3d84a8;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    background: #fff;
+    color: #3d84a8;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+#sidebar .Images{
+    height: 250px;
+    background-image: url('https://is2-ssl.mzstatic.com/image/thumb/Purple113/v4/e3/b7/66/e3b7661b-584e-3523-8fd3-32af7b27294d/AnimeGalleryIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.jpeg/246x0w.jpg');
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+}
+#sidebar .Images img{
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 30%;
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    border-color: #abedd8;
+    border-style: solid;
+    border-width: 3px;
+}
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #3d84a8;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #abedd8;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #3d84a8;
+    background: #fff;
+}
+
+#sidebar ul li.active a[aria-expanded="true"] {
+    color: #fff;
+    background: #3d84a8;
+}
+
+#sidebar a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#sidebar .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#sidebar ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #3d84a8;
+}
+#sidebar a,
+#sidebar a:hover,
+#sidebar a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar ul li.active a[aria-expanded="true"] {
+    color: #fff;
+    background: #3d84a8;
+}
+
+#sidebar a[data-toggle="dropdown"] {
+    position: relative;
+}
+
+#sidebar .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#sidebar ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #3d84a8;
+}
+/*-----------------
+    Flags
+-------------------*/
+.Flags .row img{
+width: 100%;
+}
+
+
+/*-------------
+    footer
+---------------*/
+.FOOTER{
+    padding: 45px 0;
+    color: #737373;
+    background-color: #26272b;
+}
+.FOOTER .FootCont{
+    border-bottom: 2px solid #737373;
+    padding-bottom: 40px;
+}
