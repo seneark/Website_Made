@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+
+:root{
+    --primary-color:#71c9ce ;
+    --Slab :'Slabo 27px', serif;
+    --text-color :#5f6caf;
+    --header:'Bitter', serif;
+
+}
+header{
+    position: relative;
+    background-color: var(--primary-color);
+    font-family: var(--Slab);
+}
+.header .row{
+    position: fixed;
+}
+.header_tab{
+    position: relative;
+    top:0;
+    left: 0;
+}
+header .Title{
+    font-family: var(--header);
+    color: var(--text-color);
+}
+.links a{
+    font-size: 1em;
+    text-decoration: None;
+    color: aliceblue;
+}
+.navbar-nav ul li{
+    display: inline;
+    text-decoration: none;
+    padding: 0.5em 0 ;
+
+}
+.navbar-nav .nav-link{ 
+    font-size: 1.2em;
+    padding-left: 1.3em !important;
+}
+.Carousel{
+    position: relative;
+}
+.Carousel img{
+    width: 100%;
+    height: 100vh;
+}
+.position-top{
+    position: absolute;
+    top:40%;
+}
+.Carousel .slider-btn .prev{
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+.Carousel .slider-btn .next{
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    right: 0;
+    transition: 1s ease;
+    opacity: 0;
+}
+.Carousel:hover .slider-btn .prev{
+    opacity: 1;
+}
+.Carousel:hover .slider-btn .next{
+    opacity: 1;
+}
+.Carousel .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+.Carousel .slick-dots li{
+    margin: 0 0.6rem;
+}
+.Carousel .slick-dots button{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    background-color: white;
+    text-indent: -9999000px;
+    border-radius: 10px;;
+}
+
+.Carousel .slick-dots li.slick-active button{
+    transform: scale(2.5);
+    box-shadow: 0px 3px 5px 1px rgba(0, 0,0, 0.205);
+}
+section{
+    padding-top: 10%;
+}
+
+
+/*--------------------
+    feature-adds
+----------------------*/
+.features-ads {
+    padding-bottom: 10px;
+    margin: auto;
+}
+.features-ads .row{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.features-ads .single-features-ads {
+	text-align: center;
+    margin-bottom: 30px;
+}
+
+.features-ads .single-features-ads.first {
+	margin-top: 39px;
+}
+
+.features-ads .single-features-ads.second {
+	margin-top: 8px;
+}
+
+.features-ads .single-features-ads img {
+	margin-bottom: 15px;
+}
+
+.features-ads .single-features-ads h4 {
+	color: #1e1e1e;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 50px;
+}
+
+.features-ads .single-features-ads p {
+	color: #727272;
+	font-size: 14px;
+	line-height: 27px;
+	font-weight: 500;
+}
+/*--------------
+ Product slider 
+ ---------------*/
+.product-slider p{
+    padding-left: 2rem;
+    margin-bottom: 0 !important;
+    letter-spacing: 0.3em;
+}
+.product-slider{
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.product-slider .row .slick-list{
+    padding: 1rem 1.5rem;
+}
+.product-slider .slide{
+    position: relative;
+}
+.product-slider .slide img{
+    width: 98px;
+    height: 200px;
+    margin: auto;
+}
+.product-slider .slider-btn .prev{
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    left: 0;
+    background-color: #a6e3e9;
+}
+.product-slider .slider-btn .next{
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    right: 0;
+    background-color: #a6e3e9;
+}
+
+.prd-btn{
+    padding: 0.8rem 1.3rem;
+    border-radius: 4rem;
+    border: 1px solid var(--primary-color);
+    background-color: white;
+    color: gray;
+    transition: 1s ease;
+}
+.product-slider .row .prd-btn:hover{
+    background-color: var(--primary-color);
+    color: #f4b0c7;
+}
+
+.deal-of-week { 
+    border-radius: 10px;
+    overflow: hidden;
+}
+.deal-of-week .row img{
+    width: 100%;
+    padding: 10%;
+}
+.deal-of-week .row .cards{
+    background-color: rgba(255 , 255, 255,255);
+    border-radius: 10px;
+}
+.deal-of-week .row p{
+    text-align: center;
+    padding-top: 20%;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+}
+#head{
+    padding-top: 50% !important;
+}
+  
+  .deal-of-week .row .cards li {
+    display: inline-block;
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .deal-of-week .row .cards li span {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+/*-------------
+feature-box
+---------------*/
+  .features-box .single-box-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.features-box .single-box-item.first-box {
+	margin-bottom: 35px;
+}
+
+.features-box .single-box-item.first-box .box-text {
+	position: absolute;
+	right: 60px;
+	top: 106px;
+}
+
+.features-box .single-box-item.first-box .box-text .trend-alert {
+	color: #1e1e1e;
+	display: block;
+	font-size: 22px;
+	font-family: "FuturaBT-Book";
+	letter-spacing: 2px;
+	line-height: 45px;
+	text-transform: uppercase;
+	margin-bottom: 38px;
+}
+
+.features-box .single-box-item.first-box .box-text .primary-btn {
+	border-color: #D0D7DB;
+	color: #1e1e1e;
+}
+
+.features-box .single-box-item.second-box {
+	margin-bottom: 35px;
+}
+
+.features-box .single-box-item.second-box .box-text {
+	position: absolute;
+	left: 56px;
+	top: 150px;
+}
+
+.features-box .single-box-item.second-box .box-text .trend-year {
+	color: #fff;
+	opacity: 1;
+}
+
+.features-box .single-box-item.second-box .box-text .trend-alert {
+	color: #5b5b5b;
+	display: inline-block;
+	font-size: 16px;
+	font-family: "FuturaBT-Book";
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	line-height: 45px;
+}
+
+.features-box .single-box-item.large-box .box-text {
+	position: absolute;
+	left: 125px;
+	top: 60px;
+}
+
+.features-box .single-box-item.large-box .box-text .trend-year {
+	color: #838383;
+	opacity: 1;
+}
+
+.features-box .single-box-item.large-box .box-text h2 {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 56px;
+}
+
+.features-box .single-box-item.large-box .box-text .trend-alert {
+	color: #5b5b5b;
+	display: inline-block;
+	font-size: 22px;
+	font-family: "FuturaBT-Book";
+	letter-spacing: 2px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+.features-box .single-box-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.features-box .single-box-item .box-text .trend-year {
+	color: #1e1e1e;
+	font-size: 22px;
+	font-weight: 700;
+	opacity: 0.32;
+	display: inline-block;
+}
+
+.features-box .single-box-item .box-text h2 {
+	color: #1e1e1e;
+	font-size: 48px;
+	font-weight: 600;
+	line-height: 38px;
+}
